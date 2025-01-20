@@ -1,0 +1,15 @@
+# Machine-readable trigger for the evaluation harness.
+tool: Coverlet
+slug: coverlet
+kind: sdk
+status: skipped
+target_framework: net45
+language_version: "5"
+runner: tools/coverlet/run.sh
+expects:
+  exit_code: 3
+  reason: >-
+    Coverlet ships netstandard2.0; its .NET Framework floor is net461. This family is below that floor.
+metrics:
+  primary_for: 18
+  alternative_for: 0
