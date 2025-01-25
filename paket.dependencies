@@ -1,0 +1,10 @@
+source https://api.nuget.org/v3/index.json
+framework: net45
+storage: packages
+
+nuget Newtonsoft.Json 9.0.1
+nuget System.Net.Http 4.3.0
+nuget Microsoft.AspNet.Mvc 5.2.3
+nuget System.Text.RegularExpressions 4.3.0
+nuget BouncyCastle 1.8.1
+nuget NUnit 2.6.4
