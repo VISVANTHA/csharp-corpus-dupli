@@ -1,0 +1,15 @@
+# Machine-readable trigger for the evaluation harness.
+tool: Coverlet
+slug: coverlet
+kind: sdk
+status: skipped
+target_framework: net46
+language_version: "6"
+runner: tools/coverlet/run.sh
+expects:
+  exit_code: 3
+  reason: >-
+    Coverlet ships netstandard2.0, whose .NET Framework floor is net461. This family is net46 -- ONE PATCH RELEASE below it. Coverlet is the primary for 18 metrics (statement 5, branch 7, delta 6), so the whole coverage block turns on a single patch digit rather than on anything about the language or the tool.
+metrics:
+  primary_for: 18
+  alternative_for: 0
