@@ -1,0 +1,15 @@
+# Machine-readable trigger for the evaluation harness.
+tool: OpenTelemetry (.NET) + OTLP exporter
+slug: opentelemetry
+kind: sdk
+status: skipped
+target_framework: net46
+language_version: "6"
+runner: tools/opentelemetry/run.sh
+expects:
+  exit_code: 3
+  reason: >-
+    netstandard2.0 minimum, so it clears at net461 and not here -- the same one-patch boundary that holds Coverlet out. Also: tracing is not path coverage. The TypeScript corpus shipped an OTel bootstrap that registered a no-op processor, exported nothing and exited 0 -- a structurally zero result.
+metrics:
+  primary_for: 1
+  alternative_for: 0
