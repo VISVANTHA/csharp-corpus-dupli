@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>OrderKit.Tests</AssemblyName>
+    <RootNamespace>OrderKit.Tests</RootNamespace>
+    <!-- LangVersion is deliberately NOT set. It defaults from the TargetFramework,
+         which is what makes the family axis one number instead of two. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- see PACKAGES-CONFIG.INERT.md -->
+    <!-- CELL CONTRADICTION: packages.config is declared for this branch
+         but an SDK-style project cannot consume it. See
+         PACKAGES-CONFIG.INERT.md and dataset.json branchFunctional. -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrderKit.Domain\OrderKit.Domain.csproj" />
+    <ProjectReference Include="..\..\OrderKit.Contracts\OrderKit.Contracts.csproj" />
+    <ProjectReference Include="..\..\OrderKit.Pricing\OrderKit.Pricing.csproj" />
+    <ProjectReference Include="..\..\OrderKit.Risk\OrderKit.Risk.csproj" />
+    <ProjectReference Include="..\..\OrderKit.Reporting\OrderKit.Reporting.csproj" />
+  </ItemGroup>
+
+</Project>
