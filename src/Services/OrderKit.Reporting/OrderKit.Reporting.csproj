@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>OrderKit.Reporting</AssemblyName>
+    <RootNamespace>OrderKit.Reporting</RootNamespace>
+    <!-- LangVersion is deliberately NOT set. It defaults from the TargetFramework,
+         which is what makes the family axis one number instead of two. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- CELL CONTRADICTION: packages.config is declared for this branch
+         but an SDK-style project cannot consume it. See
+         PACKAGES-CONFIG.INERT.md and dataset.json branchFunctional. -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrderKit.Domain\OrderKit.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
