@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>OrderKit.Contracts</AssemblyName>
+    <RootNamespace>OrderKit.Contracts</RootNamespace>
+    <!-- LangVersion is deliberately NOT set. It defaults from the TargetFramework,
+         which is what makes the family axis one number instead of two. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- versions resolved by paket.lock; see paket.references -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrderKit.Domain\OrderKit.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
