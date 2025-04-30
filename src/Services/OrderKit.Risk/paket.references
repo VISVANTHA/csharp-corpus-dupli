@@ -1,0 +1,5 @@
+Newtonsoft.Json
+System.Net.Http
+Microsoft.AspNet.Mvc
+System.Text.RegularExpressions
+BouncyCastle
