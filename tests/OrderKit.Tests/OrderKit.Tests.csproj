@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>OrderKit.Tests</AssemblyName>
+    <RootNamespace>OrderKit.Tests</RootNamespace>
+    <!-- LangVersion is deliberately NOT set. It defaults from the TargetFramework,
+         which is what makes the family axis one number instead of two. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- NUnit resolved by paket -->
+    <!-- versions resolved by paket.lock; see paket.references -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrderKit\OrderKit.csproj" />
+  </ItemGroup>
+
+</Project>
