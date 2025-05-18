@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build"
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+          Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OrderKit</RootNamespace>
+    <AssemblyName>OrderKit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net472\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\packages\System.Net.Http.4.3.0\lib\net472\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Mvc">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net472\Microsoft.AspNet.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>..\..\packages\System.Text.RegularExpressions.4.3.0\lib\net472\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle">
+      <HintPath>..\..\packages\BouncyCastle.1.8.1\lib\net472\BouncyCastle.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncPricingGateway.cs" />
+    <Compile Include="Diagnostics.cs" />
+    <Compile Include="DuplicateProcessorA.cs" />
+    <Compile Include="DuplicateProcessorB.cs" />
+    <Compile Include="InputSanitizer.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderLine.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Platform\Integrations.cs" />
+    <Compile Include="Priceable.cs" />
+    <Compile Include="PricingService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiskScorer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
