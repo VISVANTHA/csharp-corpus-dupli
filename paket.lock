@@ -1,0 +1,9 @@
+RESTRICTION: == netcoreapp3.0
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Newtonsoft.Json (9.0.1)
+    System.Net.Http (4.3.0)
+    Microsoft.AspNet.Mvc (5.2.3)
+    System.Text.RegularExpressions (4.3.0)
+    BouncyCastle (1.8.1)
+    NUnit (3.13.3)
