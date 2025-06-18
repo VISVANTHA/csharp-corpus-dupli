@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>OrderKit.Pricing</AssemblyName>
+    <RootNamespace>OrderKit.Pricing</RootNamespace>
+    <!-- LangVersion is deliberately NOT set. It defaults from the TargetFramework,
+         which is what makes the family axis one number instead of two. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="System.Net.Http" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" />
+    <PackageReference Include="System.Text.RegularExpressions" />
+    <PackageReference Include="BouncyCastle" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrderKit.Domain\OrderKit.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
