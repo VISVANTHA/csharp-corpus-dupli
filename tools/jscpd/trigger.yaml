@@ -1,0 +1,15 @@
+# Machine-readable trigger for the evaluation harness.
+tool: jscpd
+slug: jscpd
+kind: standalone
+status: active
+target_framework: netcoreapp3.0
+language_version: "8.0"
+runner: tools/jscpd/run.sh
+expects:
+  exit_code: 0
+  reason: >-
+    Node, own tokeniser. Class B.
+metrics:
+  primary_for: 7
+  alternative_for: 0
