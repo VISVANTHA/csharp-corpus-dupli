@@ -1,11 +1,11 @@
-# OrderKit - CS-026
+# OrderKit - CS_VNETFX46_SDKMSBUILD_NUGETPACKAGEREFERENCE_MICRO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-026`
+`CS_VNETFX46_SDKMSBUILD_NUGETPACKAGEREFERENCE_MICRO`
 
 ## Cell
 
