@@ -1,11 +1,11 @@
-# OrderKit - CS-153
+# OrderKit - CS_VNETCOREAPP30_CAKE_NUGETPACKAGEREFERENCE_MONO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-153`
+`CS_VNETCOREAPP30_CAKE_NUGETPACKAGEREFERENCE_MONO`
 
 ## Cell
 
