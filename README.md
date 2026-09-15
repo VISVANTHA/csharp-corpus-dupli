@@ -1,11 +1,11 @@
-# OrderKit - CS-041
+# OrderKit - CS_VNETFX46_DOTNETCLI_NUGETPACKAGEREFERENCE_MONO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-041`
+`CS_VNETFX46_DOTNETCLI_NUGETPACKAGEREFERENCE_MONO`
 
 ## Cell
 
