@@ -1,4 +1,4 @@
-# OrderKit - CS-232
+# OrderKit - CS_VNET7_CAKE_NUGETPACKAGESCONFIG_MICRO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
@@ -9,7 +9,7 @@ execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-232`
+`CS_VNET7_CAKE_NUGETPACKAGESCONFIG_MICRO`
 
 ## Cell
 
