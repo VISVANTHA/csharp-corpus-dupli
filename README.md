@@ -1,4 +1,4 @@
-# OrderKit - CS-296
+# OrderKit - CS_VNET10_SDKMSBUILD_NUGETPACKAGESCONFIG_MICRO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
@@ -9,7 +9,7 @@ execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-296`
+`CS_VNET10_SDKMSBUILD_NUGETPACKAGESCONFIG_MICRO`
 
 ## Cell
 
