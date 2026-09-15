@@ -1,4 +1,4 @@
-# OrderKit - CS-303
+# OrderKit - CS_VNET10_CAKE_NUGETPACKAGESCONFIG_MONO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
@@ -9,7 +9,7 @@ execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-303`
+`CS_VNET10_CAKE_NUGETPACKAGESCONFIG_MONO`
 
 ## Cell
 
