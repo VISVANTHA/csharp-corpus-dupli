@@ -1,11 +1,11 @@
-# OrderKit - CS-306
+# OrderKit - CS_VNET10_DOTNETCLI_NUGETPACKAGEREFERENCE_MICRO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-306`
+`CS_VNET10_DOTNETCLI_NUGETPACKAGEREFERENCE_MICRO`
 
 ## Cell
 
