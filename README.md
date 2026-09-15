@@ -1,4 +1,4 @@
-# OrderKit - CS-160
+# OrderKit - CS_VNETCOREAPP30_CAKE_NUGETPACKAGESCONFIG_MICRO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
@@ -9,7 +9,7 @@ execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-160`
+`CS_VNETCOREAPP30_CAKE_NUGETPACKAGESCONFIG_MICRO`
 
 ## Cell
 
