@@ -1,11 +1,11 @@
-# OrderKit - CS-162
+# OrderKit - CS_VNETCOREAPP30_DOTNETCLI_NUGETPACKAGEREFERENCE_MICRO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-162`
+`CS_VNETCOREAPP30_DOTNETCLI_NUGETPACKAGEREFERENCE_MICRO`
 
 ## Cell
 
