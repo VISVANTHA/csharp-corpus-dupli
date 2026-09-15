@@ -1,4 +1,4 @@
-# OrderKit - CS-191
+# OrderKit - CS_VNET5_DOTNETCLI_NUGETPACKAGESCONFIG_MONO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
@@ -9,7 +9,7 @@ execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-191`
+`CS_VNET5_DOTNETCLI_NUGETPACKAGESCONFIG_MONO`
 
 ## Cell
 
