@@ -1,4 +1,4 @@
-# OrderKit - CS-031
+# OrderKit - CS_VNETFX46_SDKMSBUILD_NUGETPACKAGESCONFIG_MONO
 
 One branch of the C# tool-evaluation corpus. Test **data**, not a product: tool
 execution is not part of the build, and evaluation happens later.
@@ -9,7 +9,7 @@ execution is not part of the build, and evaluation happens later.
 
 ## Branch
 
-`CS-031`
+`CS_VNETFX46_SDKMSBUILD_NUGETPACKAGESCONFIG_MONO`
 
 ## Cell
 
