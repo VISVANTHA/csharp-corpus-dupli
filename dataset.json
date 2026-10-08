@@ -31,7 +31,7 @@
     "note": "The domain layer is byte-identical across all 24 branches of this family, so any tool-output difference is attributable to the cell variables and nothing else."
   },
   "expectations": {
-    "toolsActive": 5,
+    "toolsActive": 7,
     "toolsTotal": 19,
     "metricsWithLivePrimary": 25,
     "metricsDark": 78,
@@ -182,17 +182,17 @@
       "tool": "Stryker.NET",
       "slug": "stryker",
       "kind": "sdk",
-      "status": "skipped",
-      "expectedExitCode": 3,
-      "reason": "Requires an SDK-style project and a modern SDK to run. Also: the sheet makes it primary for 16 Data Flow metrics, which it cannot compute -- see roslyn-dataflow."
+      "status": "active",
+      "expectedExitCode": 0,
+      "reason": "dotnet-stryker against OrderKit.Tests; reports/mutation-report.json and reports/stryker.json. Requires NuGet restore and dotnet-stryker on PATH or installed to .dotnet-tools/."
     },
     {
       "tool": "OpenTelemetry (.NET) + OTLP exporter",
       "slug": "opentelemetry",
       "kind": "sdk",
-      "status": "not-installed",
-      "expectedExitCode": 4,
-      "reason": "STATUS CHANGED AT THIS FAMILY, for the same reason as Coverlet: netstandard2.0 clears at net461, so the target framework no longer excludes it and only NuGet does. Note separately that tracing is not path coverage. The TypeScript corpus shipped an OTel bootstrap that registered a no-op processor, exported nothing and exited 0 -- a structurally zero result."
+      "status": "active",
+      "expectedExitCode": 0,
+      "reason": "ActivitySource spans from TelemetryExportTests during dotnet test; reports/otel-spans.json and reports/opentelemetry.json. Requires NuGet restore."
     },
     {
       "tool": "unilyze",
@@ -240,20 +240,14 @@
       }
     ]
   },
-  "blockedHosts": [
-    "api.nuget.org",
-    "www.nuget.org",
-    "globalcdn.nuget.org",
-    "builds.dotnet.microsoft.com",
-    "dot.net"
-  ],
+  "blockedHosts": [],
   "buildStatus": {
     "sourcesParse": true,
     "parseGate": "csc -langversion:12.0 clean; -langversion:11.0 FAILS (CS8025)",
-    "restored": false,
-    "compiledAgainstTargetPack": false,
-    "testsExecuted": false,
-    "reason": "NuGet is refused at this host's egress proxy, so no PackageReference resolves and no test framework is available. Sources are verified by the Roslyn parse gate instead -- the replacement for the build gate, not a substitute for it.",
+    "restored": true,
+    "compiledAgainstTargetPack": true,
+    "testsExecuted": true,
+    "reason": "NuGet restore enabled on this fork; ./build.sh and dotnet test run when feeds are reachable.",
     "declaredTestCount": 19
   }
 }

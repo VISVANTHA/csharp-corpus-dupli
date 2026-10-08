@@ -1,0 +1,18 @@
+{
+  "files": {
+    "src/OrderKit/PricingService.cs": {
+      "mutants": [
+        {
+          "status": "Killed",
+          "mutatorName": "ArithmeticOperator",
+          "location": { "start": { "line": 10, "column": 5 } }
+        },
+        {
+          "status": "Survived",
+          "mutatorName": "EqualityOperator",
+          "location": { "start": { "line": 12, "column": 9 } }
+        }
+      ]
+    }
+  }
+}

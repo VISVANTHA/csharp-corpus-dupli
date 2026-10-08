@@ -1,0 +1,12 @@
+{
+  "stryker-config": {
+    "solution": "OrderKit.sln",
+    "project": "tests/OrderKit.Tests/OrderKit.Tests.csproj",
+    "reporters": ["json", "cleartext"],
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "tool": "opentelemetry",
+  "spans": [
+    {
+      "Name": "OrderKit.PricingService.PriceCents",
+      "DurationTicks": 1200,
+      "TraceId": "0123456789abcdef0123456789abcdef"
+    },
+    {
+      "Name": "OrderKit.RiskScorer.Score",
+      "DurationTicks": 800,
+      "TraceId": "0123456789abcdef0123456789abcdef"
+    }
+  ]
+}

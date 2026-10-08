@@ -41,7 +41,7 @@ csc -langversion:11.0   ->  error CS8025: Feature 'async function' is not availa
 
 ## Supported tools
 
-5 of the 19 tools in the roster are expected to fire on this branch. The rest exit
+7 of the 19 tools in the roster are expected to fire on this branch. The rest exit
 3 (cannot run here) or 4 (absent from this host), each with its reason in both
 `run.sh` and `trigger.yaml`.
 
@@ -73,8 +73,8 @@ never ran" - so the source-level tools below are the built-in negative control:
 | Coverlet | not-installed | STATUS CHANGED AT THIS FAMILY. net45 and net46 sat below netstandard2.0, whose .NET Fram |
 | AltCover | not-installed | Declares .NET Framework 2.0+ via a net20 recorder, so it is the one coverage tool in the |
 | MiniCover | skipped | MiniCover 3.10.0 declares .NET SDK 8.0/9.0/10.0 only -- verified against its own MiniCov |
-| Stryker.NET | skipped | Requires an SDK-style project and a modern SDK to run. Also: the sheet makes it primary  |
-| OpenTelemetry (.NET) + OTLP exporter | not-installed | STATUS CHANGED AT THIS FAMILY, for the same reason as Coverlet: netstandard2.0 clears at |
+| Stryker.NET | active | dotnet-stryker on OrderKit.Tests; outputs reports/mutation-report.json |
+| OpenTelemetry (.NET) + OTLP exporter | active | TelemetryExportTests writes reports/otel-spans.json during dotnet test |
 | unilyze | absent | NOT A TOOL. The only package of this name anywhere is PyPI `unilyze` 0.2.1, 'Get detaile |
 
 ## Build
@@ -83,8 +83,7 @@ never ran" - so the source-level tools below are the built-in negative control:
 ./build.sh
 ```
 
-Restore will not succeed on a host where NuGet is unreachable; see `dataset.json`
-`blockedHosts`.
+Run `dotnet restore OrderKit.sln` before SDK tools (Stryker.NET, OpenTelemetry, Coverlet).
 
 ## Test
 

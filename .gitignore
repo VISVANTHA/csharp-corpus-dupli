@@ -1,6 +1,8 @@
 bin/
 obj/
 packages/
+.dotnet-tools/
+StrykerOutput/
 reports/
 .vs/
 *.user
